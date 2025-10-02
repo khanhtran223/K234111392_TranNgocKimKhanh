@@ -17,7 +17,7 @@
                 margin: 3px;
             }
             hr{
-                border:1px solid black
+                border:1px solid brown
             }
             textarea {
                 width: 400px;
@@ -41,7 +41,7 @@
             <table align="center">
                 <tr>
                     <td>First Name:</td>
-                    <td colspan="3">
+                    <td colspan="2">
                         <input type="text" name="fname" id="fname">
                         Last Name
                         <input type="text" name="lname" id="lname">
@@ -49,19 +49,19 @@
                 </tr>
                 <tr>
                     <td>Address #1</td>
-                    <td colspan="3">
-                        <input type="text" name="adr1" id="adr1">
+                    <td colspan="2">
+                        <input type="text" name="adr1" id="adr1" style="width: 300px;">
                     </td>
                 </tr>
                 <tr>
                     <td>Address #2</td>
-                    <td colspan="3">
-                        <input type="text" name="adr2" id="adr2">
+                    <td colspan="2">
+                        <input type="text" name="adr2" id="adr2" style="width: 300px;">
                     </td>
                 </tr>
                 <tr>
                     <td>City:</td>
-                    <td>
+                    <td colspan="2">
                         <input type="text" id="city">
                         State: <input type="text" id="state" style="width: 60px;">
                         Zip: <input type="text" id="zip" style="width: 60px;">
@@ -69,14 +69,15 @@
                 </tr>
                 <tr>
                     <td>Country:</td>
-                    <td><input type="text" id="country" value="United States" style="width: 350px;"></td>
+                    <td><input type="text" id="country" value="United States"></td>
+                    <td>&nbsp;</td>
                 </tr>
 
-                <tr><td colspan="4"><hr/></td></tr>
+                <tr><td colspan="3"><hr/></td></tr>
 
                 <tr>
-                    <td>Product: </td>
-                    <td>
+                    <td>Product:</td>
+                    <td colspan="2">
                         <select>
                             <option>ScanMaster</option>
                             <option>Printer</option>
@@ -92,24 +93,24 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Date Purchased: </td>
-                    <td><input type="date" id="date"></td>
+                    <td>Date Purchased:</td>
+                    <td colspan="2"><input type="date" id="date"></td>
                 </tr>
                 <tr>
-                    <td>Serial #: </td>
-                    <td><input type="text" id="seri"></td>
+                    <td>Serial #:</td>
+                    <td colspan="2"><input type="text" id="seri"></td>
                 </tr>
                 <tr>
-                    <td rowspan="3" valign="top">Used for: </td>
+                    <td rowspan="3" valign="top">Used for:</td>
                     <td><input type="radio" name="used" value="Home"> Home </td>
-                    <td><input type="radio" name="used" value="Institution"> Educational Institution</td>
+                    <td><input type="radio" name="used" value="Institution"> Educational Institution </td>
                 </tr>
                 <tr>
                     <td><input type="radio" name="used" value="Business"> Business</td>
                     <td><input type="radio" name="used" value="Other"> Other</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="used" value="Government"> Government</td>
+                    <td colspan="2"><input type="radio" name="used" value="Government"> Government</td>
                 </tr>
                 <tr>
                     <td rowspan="2">System (check all that apply): </td>
@@ -124,10 +125,10 @@
 
                 <tr>
                     <td valign="top">Comments?:</td>
-                    <td colspan="3"><textarea></textarea></td>
+                    <td colspan="2"><textarea></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="4" align="center">
+                    <td colspan="3">
                         <input type="submit" value="Click to register" onclick="registerForm()">
                         <input type="reset" value="Click to cancel">
                     </td>
