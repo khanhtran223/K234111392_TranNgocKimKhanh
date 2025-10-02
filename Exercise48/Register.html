@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Kim Khanh - Exercise 48</title>
+        <style>
+            body{
+                background-color:rgb(167, 202, 255);
+            }
+            table {
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+            td {
+                padding: 5px;
+                text-align:left
+            }
+            input, select, textarea {
+                margin: 3px;
+            }
+            hr{
+                border:1px solid black
+            }
+            textarea {
+                width: 400px;
+                height: 100px;
+            }
+        </style>
+        <script>
+            function registerForm()
+            {
+                alert("Registration successfull")
+            }
+        </script>
+    </head>
+    <body>
+        <p align="center">
+            <img src="ex48/images/Jackson.gif"/>
+        </p>
+        <h2 align="center">Registration Form</h2>
+        <h4 align="center">Register your Jackson Electronics product here</h4>
+        <form id="dangky" method="post">
+            <table align="center">
+                <tr>
+                    <td>First Name:</td>
+                    <td colspan="3">
+                        <input type="text" name="fname" id="fname">
+                        Last Name
+                        <input type="text" name="lname" id="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address #1</td>
+                    <td colspan="3">
+                        <input type="text" name="adr1" id="adr1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address #2</td>
+                    <td colspan="3">
+                        <input type="text" name="adr2" id="adr2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <input type="text" id="city">
+                        State: <input type="text" id="state" style="width: 60px;">
+                        Zip: <input type="text" id="zip" style="width: 60px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input type="text" id="country" value="United States" style="width: 350px;"></td>
+                </tr>
+
+                <tr><td colspan="4"><hr/></td></tr>
+
+                <tr>
+                    <td>Product: </td>
+                    <td>
+                        <select>
+                            <option>ScanMaster</option>
+                            <option>Printer</option>
+                            <option>Smartphone</option>
+                            <option>Laptop</option>
+                            <option>Tablet</option>
+                            <option>Smart TV</option>
+                            <option>Bluetooth Speaker</option>
+                            <option>Headphones</option>
+                            <option>Smartwatch</option>
+                            <option>Camera</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Purchased: </td>
+                    <td><input type="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td>Serial #: </td>
+                    <td><input type="text" id="seri"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3" valign="top">Used for: </td>
+                    <td><input type="radio" name="used" value="Home"> Home </td>
+                    <td><input type="radio" name="used" value="Institution"> Educational Institution</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="used" value="Business"> Business</td>
+                    <td><input type="radio" name="used" value="Other"> Other</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="used" value="Government"> Government</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">System (check all that apply): </td>
+                    <td><input type="checkbox" value="Windows"> Windows</td>
+                    <td><input type="checkbox" value="UNIX"> UNIX</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="Macintosh"> Macintosh</td>
+                    <td><input type="checkbox" value="Other"> Other</td>
+                </tr>
+                <tr><td colspan="4"><hr/></td></tr>
+
+                <tr>
+                    <td valign="top">Comments?:</td>
+                    <td colspan="3"><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <input type="submit" value="Click to register" onclick="registerForm()">
+                        <input type="reset" value="Click to cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
