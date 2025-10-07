@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Kim Khanh</title>
+        <script>
+            function show_image()
+            {
+                //step1: Get image object by taylor_avt id
+                img=document.getElementById("taylor_avt")
+                //Step2: Set style attribute for show image
+                img.setAttribute("style", "display:block")
+            }
+            function hide_image()
+            {
+                //step1: Get image object by taylor_avt id
+                img=document.getElementById("taylor_avt")
+                //Step2: Set style attribute for show image
+                img.setAttribute("style", "display:none")
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <input type="radio" name="myimage" id="img1" onchange="show_image()"/>
+            <label for="img1">Show image</label>
+            <br/>
+            <input type="radio" name="myimage" id="img2" onchange="hide_image()"/>
+            <label for="img2">Hide Image</label>
+            <br/>
+            <img src="../../images/snowpic.jpeg" id="taylor_avt" name="taylor_avt"/>
+        </form>
+    </body>
+</html>
